@@ -5,6 +5,7 @@
     font-family: "Exo",sans-serif;
     color: white;
 }
+
 body{
     margin: 0;
     padding: 0;
@@ -27,12 +28,16 @@ main{
     line-height: 2;
 }
 
-.nav-link{
-    margin: 0;
-    padding-left: 20px;
+a{
+    margin: 0 0 0 20px;
     font-family: "BlankGothic";
     font-size: 24px;
-    text-decoration: underline;
+    color:white;
+}
+
+a:hover{
+    background-color: white;
+    color: black;
 }
 
 .event-description{
@@ -152,6 +157,145 @@ footer{
     padding-top: 40px;
     padding-bottom: 30px;
     text-align: center;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;  
+  margin-top: 40px;  
+/*  border: 1px solid #ccc;*/
+/*  background-color: #f1f1f1;*/
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border-right: solid 0.5px rgba(255, 255, 255, 0.25);
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+  outline: none;
+  cursor: pointer;
+  padding: 9px 30px;
+  transition: 0.3s;
+  font-family: "Exo",sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  color: white;  
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+/*  background-color: #ddd;*/
+    text-decoration: underline .8px;    
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: white;
+  color: black;
+  text-decoration: underline .8px;  
+  font-weight: 500;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 0 40px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+  font-family: "Exo",sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+}
+
+.tabcontent h2{
+    margin-top: 20px;
+    font-weight: 500;
+/*    font-size: 24px;*/
+    font-size: 1.3 em;
+}
+
+.tabcontent p{
+    margin: 10px 0;
+    color: #bbb;
+    text-indent: 1.5em;
+    line-height: 1.5;
+}
+
+.tabcontent p strong{
+    font-weight: 500;
+}
+
+.tabcontent .subtitle{
+    margin: -25px 0 20px 0;
+    color: white;
+    font-weight: 400;
+    text-indent: 0;
+}
+
+
+.artist-section{
+    margin: 20px 0;
+}
+
+.artist-flex{
+    display: flex;
+    flex-direction: row;
+/*    flex-wrap: wrap;
+    align-content: flex-end;*/
+}
+
+.artist-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-width: 30%;
+}
+.artist-img img{
+    width: 100%;
+    height: auto;
+}
+
+.artist-info{
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.artist-info .artist-name{
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    color: white;
+    font-weight: 400;
+    text-indent: 0;
+}
+
+.artist-info .artist-contact{
+    font-size: 0.78em;
+    margin: 0;
+    text-indent: 0;
+    color: white;
+}
+
+.artist-info .artist-contact a{
+    font-size: 1em;
+    font-family: "Exo",sans-serif;
+    margin: 0;
+    text-indent: 0;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 
