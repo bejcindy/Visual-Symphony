@@ -2,11 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Hi</title>
+    <title>Visual Symphony</title>
     <link rel="stylesheet" type="text/css" href="Styles/Global.css">
-    <link rel="icon" type="image/png" href="Images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- <link rel="icon" type="image/png" href="Images/favicon.png"> -->
 </head>
 <body>
-    
+    <img class="banner" src="Images/VSPoster.jpg">
+
+    <main>
+        <p class="nav-link">> View 2024 Works</p>
+
+        <p class="event-description">
+            <strong class="event-name">VISUAL SYMPHONY</strong> is a collaboration project that would resolve as a video exhibition taking place at <strong class="event-info">Central Saint Martins, University of London</strong> on <strong class="event-info">May 3rd from 10 am to 4 pm</strong>. The exhibition features 10 big screens, paired with several headphones for the audience to use, allowing for a fully immersive experience. It incorporates tailored original compositions for prerecorded videos. Unlike traditional exhibitions or concerts, it dispenses with the conventional stage and the rigid division between performers and the audience. Rather than having a traditional stage, audience members are totally immersed in the art they're experiencing with soundproof headphones, removing them from the present world they are in, and allowing them to escape outside stresses and just be in the art in front of them. This event features 10 original experimental art films by artists from UAL (University of Arts London), collaborating with the Composers from NEC (New England Conservatory) and Berklee College of Music. Please join us for an unforgettable experience that will return year after year, growing into a beloved annual tradition!
+        </p>
+    </main>
+
+    <div class="contact-form-div">
+       <form action="https://api.web3forms.com/submit" method="POST">
+            <h3>Open Call For 2025</h3>
+
+            <div class="contact-form-grid">
+                <input type="hidden" name="access_key" value="6b3d484f-1b00-4b96-80f3-6269460d2152">
+
+                <div class="contact-form-element">
+                <label for="fname">First Name*</label>
+                <input type="text" name="firstname" class="contact-form-input" required>
+                </div>
+
+                <div class="contact-form-element">
+                <label for="lname">Last Name*</label>
+                <input type="text" id="lname" name="lastname" class="contact-form-input" required>
+                </div>
+
+                <div class="contact-form-element">
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" class="contact-form-input" required>
+                </div>
+
+                <div class="contact-form-element">
+                <label for="school">School</label>
+                <input type="text" id="school" name="schoolname" class="contact-form-input">
+                </div>
+
+                <div class="contact-form-bigelement">
+                <label for="message">Short description of what you do and your preferred medium (i.e. experimental film, electronic music)</label>
+                <textarea type="text" id="message" name="message" class="contact-form-input"></textarea>
+                </div>
+            </div>
+
+            <button type="submit">Submit</button>
+       </form>
+       <footer>© 2024 Visual Symphony</footer>
+    </div>
 </body>
 </html>
