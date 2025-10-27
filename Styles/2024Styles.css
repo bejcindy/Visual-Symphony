@@ -1,0 +1,122 @@
+﻿html {
+    background-color: #060000;
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+}
+
+.event-description {
+    color: #bbb;
+    text-shadow: -2px 0 3px rgba(155, 79, 71, 0.6), 2px 0 3px rgba(155, 79, 71, 0.6);
+}
+
+.event-name {
+    color: white;
+}
+
+.event-info {
+    color: white;
+}
+
+.contact-form-div {
+    background-color: transparent;
+    background-image: linear-gradient(transparent, #121b46);
+}
+
+.contact-form-div button {
+    background-color: transparent;
+    border: solid;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    color: white;
+    padding: 9px 15px;
+    font-family: "Exo", sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.contact-form-div button:hover {
+    background-color: white;
+    color: black;
+}
+
+.contact-form-input {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.contact-form-input:focus {
+    border-width: 1.5px;
+    border-color: white;
+}
+
+textarea::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    margin-top: 40px;
+    /*  border: 1px solid #ccc;*/
+    /*  background-color: #f1f1f1;*/
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    border-right: solid 0.5px rgba(255, 255, 255, 0.25);
+    font-weight: 200;
+    color: white;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: white;
+    color: black;
+}
+
+.tabcontent p {
+    color: #bbb;
+}
+
+.tabcontent .subtitle {
+    color: white;
+}
+
+.artist-info .artist-name {
+    color: white;
+}
+
+.artist-info .artist-contact {
+    color: white;
+}
+
+@media screen and (max-width:800px) {
+    .contact-form-div button {
+        border-color: rgba(255, 255, 255, 0.5);
+        color: white;
+    }
+}
